@@ -632,6 +632,9 @@ form textarea {
   body {
     width: 100%;
   }
+  #slider h1 {
+    display: none;
+  }
   .col-6 {
     width: calc(100% / 12 * 12);
   }
