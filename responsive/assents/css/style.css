@@ -60,7 +60,7 @@ p {
   padding: 0 15px;
 }
 .icon-nav {
-  padding: 20px;
+  padding: 14px;
   width: 50%;
 }
 .icon-nav a {
@@ -76,7 +76,7 @@ p {
   color: #333;
 }
 .collapse {
-  padding: 20px;
+  padding: 14px;
   width: 50%;
 }
 .collapse i {
@@ -106,15 +106,50 @@ p {
 
 /* slider area start */
 #slider {
-  margin-top: 30px;
+  margin-top: 57px;
   position: relative;
 }
 .slider-area {
-  height: 700px;
+  height: 600px;
   background-image: url(http://coderspoint.net/html/showkes/assets/img/bg/intro-bg.jpg);
   background-size: cover;
   background-position: center;
   position: relative;
+}
+.slider-area p {
+  position: absolute;
+  top: 35%;
+  left: 46%;
+  font-weight: 100;
+  font-size: 38px;
+  color: #fff;
+  text-align: center;
+}
+.slider-area a {
+  position: absolute;
+  top: 70%;
+  left: 46%;
+  text-decoration: none;
+  color: #333;
+  background-color: #fff;
+  height: 50px;
+  width: 150px;
+  text-align: center;
+  padding: 14px;
+  transition: 0.5s;
+  font-weight: 600;
+  letter-spacing: 0.5px;
+}
+.slider-area a:hover {
+  color: #fff;
+  background-color: #333;
+}
+.slider-area h1 {
+  position: absolute;
+  top: 50%;
+  left: 30%;
+  font-size: 60px;
+  color: #fff;
 }
 
 /* slider area end */
