@@ -1,0 +1,569 @@
+$bgcolor-black: #262626;
+$white: #fff;
+$green: #81b441;
+$gray: #757575;
+$width-6: calc(100% / 12 * 6);
+
+@mixin width-padding {
+  padding: 14px;
+  width: 50%;
+}
+@mixin title {
+  text-align: center;
+  font-size: 20px;
+  width: 1170px;
+  margin: 0 auto;
+  height: 145px;
+  position: relative;
+}
+@mixin p {
+  margin-top: 30px;
+  color: $gray;
+}
+@mixin after {
+  content: "";
+  width: 54px;
+  height: 2px;
+  background: $gray;
+  position: absolute;
+  top: 132%;
+  left: 48%;
+}
+@mixin button {
+  margin-top: 15px;
+  position: absolute;
+  left: 92%;
+  top: -4px;
+  background-color: $green;
+  border: none;
+  height: 33px;
+  width: 90px;
+  border-radius: 4px;
+  font-size: 15px;
+  color: $white;
+}
+
+@mixin col-4 {
+  width: calc(100% / 12 * 4);
+  padding: 0 15px;
+  position: relative;
+}
+
+@mixin First-sections {
+  padding: 100px 0;
+  border-bottom: 1px solid #ddd;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+#head {
+  height: 54px;
+  width: 100%;
+  background-color: $bgcolor-black;
+  margin-bottom: 1px;
+  display: flex;
+  position: fixed;
+  top: 0;
+  z-index: 100;
+
+  p {
+    font-size: 30px;
+    margin-left: 20px;
+    padding: 6px;
+  }
+  .envato {
+    color: $white;
+  }
+  .market {
+    color: $green;
+  }
+  .left-side {
+    width: $width-6;
+  }
+  .right-side {
+    width: $width-6;
+  }
+  button {
+    @include button;
+  }
+}
+
+.position {
+  z-index: 999;
+  background-color: $white;
+  position: fixed;
+  top: 50px;
+  left: 0;
+  right: 0;
+  height: 50px;
+  display: flex;
+  padding: 0 15px;
+}
+
+.icon-nav {
+  @include width-padding();
+  a {
+    display: inline-block;
+    margin-left: 70px;
+    text-decoration: none;
+    color: $bgcolor-black;
+    font-size: 20px;
+
+    span {
+      font-weight: 600;
+      color: $bgcolor-black;
+    }
+  }
+}
+.collapse {
+  @include width-padding;
+  i {
+    display: none;
+  }
+  ul {
+    margin-right: 77px;
+    gap: 38px;
+    display: flex;
+    justify-content: flex-end;
+    flex-direction: row;
+
+    li {
+      color: $gray;
+      font-size: 20px;
+      list-style: none;
+    }
+    li:hover {
+      color: $bgcolor-black;
+      transition: 0.3s;
+    }
+    a {
+      text-decoration: none;
+    }
+  }
+}
+/* slider area start */
+#slider {
+  margin-top: 57px;
+  position: relative;
+
+  .slider-area {
+    height: 600px;
+    background-image: url(http://coderspoint.net/html/showkes/assets/img/bg/intro-bg.jpg);
+    background-size: cover;
+    background-position: center;
+    position: relative;
+  }
+  p {
+    position: absolute;
+    top: 35%;
+    left: 46%;
+    font-weight: 100;
+    font-size: 38px;
+    color: $white;
+    text-align: center;
+  }
+  a {
+    position: absolute;
+    top: 70%;
+    left: 46%;
+    text-decoration: none;
+    color: $bgcolor-black;
+    background-color: $white;
+    height: 50px;
+    width: 150px;
+    text-align: center;
+    padding: 14px;
+    transition: 0.5s;
+    font-weight: 600;
+    letter-spacing: 0.5px;
+  }
+  a:hover {
+    color: $white;
+    background-color: $bgcolor-black;
+  }
+  h1 {
+    position: absolute;
+    top: 50%;
+    left: 30%;
+    font-size: 60px;
+    color: $white;
+  }
+}
+/* slider area end */
+
+/* about section start */
+#about {
+  @include First-sections();
+  height: 700px;
+  .container {
+    height: 545px;
+
+    .row {
+      width: 1170px;
+      margin: 0 auto;
+      height: 340px;
+      display: flex;
+
+      h3 {
+        font-size: 18px;
+        margin-bottom: 15px;
+        margin-top: 20px;
+        color: #333;
+        font-weight: 600;
+
+        span {
+          font-weight: 400;
+        }
+      }
+
+      img {
+        max-width: 100%;
+      }
+
+      .about-text {
+        width: 500px;
+
+        p {
+          letter-spacing: 0px;
+          line-height: 1.7;
+          color: $gray;
+          font-size: 17px;
+        }
+        .btn-link {
+          display: inline-block;
+          margin-top: 10px;
+          text-decoration: none;
+          background-color: $bgcolor-black;
+          color: $white;
+          padding: 10px 25px;
+          border-radius: 0px;
+          border: none;
+          font-weight: 600;
+          letter-spacing: 0.5px;
+          transition: 0.5s;
+          line-height: 1.42857143;
+          font-size: 14px;
+        }
+        .btn-link:hover {
+          background: $gray;
+          color: $white;
+        }
+      }
+    }
+
+    .about-me {
+      position: relative;
+      text-align: center;
+      font-size: 20px;
+      width: 1170px;
+      margin: 0 auto;
+      height: 145px;
+
+      p {
+        @include p();
+      }
+
+      h2 {
+        position: relative;
+        color: $gray;
+      }
+      h2:after {
+        @include after();
+      }
+      span {
+        color: $bgcolor-black;
+      }
+    }
+  }
+  .col-6 {
+    width: $width-6;
+    padding: 0 15px;
+  }
+}
+/* about section end */
+
+/*  What I Do section start*/
+#what-i-do {
+  @include First-sections();
+  height: 746px;
+  .container {
+    height: 545px;
+
+    .row-4 {
+      display: flex;
+      flex-flow: row wrap;
+      width: 1170px;
+      height: 430px;
+      margin: 0 auto;
+
+      .box {
+        text-align: center;
+        max-width: 300px;
+        margin: auto;
+        margin-top: 30px;
+        height: 175px;
+
+        i {
+          font-size: 30px;
+          color: $gray;
+        }
+        h3 {
+          margin-top: 30px;
+          font-weight: 800;
+        }
+        p {
+          overflow: hidden;
+          margin-top: 10px;
+          font-size: 20px;
+          color: $gray;
+          font-weight: 400;
+        }
+      }
+    }
+    .title {
+      @include title();
+
+      p {
+        @include p();
+      }
+      h2 {
+        color: $gray;
+      }
+
+      h2:after {
+        @include after();
+        top: 33%;
+      }
+      span {
+        color: $bgcolor-black;
+      }
+    }
+  }
+}
+.col-4 {
+  @include col-4();
+}
+/* What I Do section end */
+
+/* My Work section start */
+#my-work {
+  height: 946px;
+  @include First-sections();
+
+  .container {
+    height: 545px;
+
+    .portfolio {
+      width: 1170px;
+      height: 540px;
+      margin: auto;
+
+      .works-item {
+        display: flex;
+        flex-flow: row wrap;
+        height: 540px;
+
+        .col-4 {
+          img {
+            max-width: 100%;
+          }
+          .overlay {
+            background-color: #fff;
+            position: absolute;
+            top: 50%;
+            left: 50%;
+            width: 0;
+            height: 0;
+            text-align: center;
+            opacity: 0;
+            transition: 0.3s cubic-bezier(0.4, 0, 1, 1);
+
+            i.fas {
+              font-size: 25px;
+              color: #333;
+              position: absolute;
+              top: 50%;
+              left: 50%;
+              transform: translate(-50%, -50%);
+            }
+          }
+          .overlay:hover {
+            opacity: 0.5;
+            width: 100%;
+            height: 100%;
+            top: 0;
+            left: 0;
+          }
+        }
+      }
+    }
+    .list {
+      width: 1170px;
+      height: 72px;
+      margin: auto;
+
+      ul {
+        list-style: none;
+        text-align: center;
+        li {
+          display: inline-block;
+          margin-right: 5px;
+          margin-bottom: 10px;
+          width: 70px;
+          color: $gray;
+          font-size: 20px;
+          span {
+            display: block;
+            margin-bottom: 5px;
+          }
+          .all {
+            font-weight: 600;
+            color: #262626;
+          }
+        }
+      }
+    }
+    .title {
+      @include title();
+
+      p {
+        @include p();
+      }
+
+      h2 {
+        color: $gray;
+      }
+      h2:after {
+        @include after();
+        top: 33%;
+      }
+      span {
+        color: $bgcolor-black;
+      }
+    }
+  }
+}
+/*My Work section end   */
+
+/*founder section start  */
+#founder {
+  height: 438px;
+  @include First-sections();
+  .container {
+    height: 438px;
+
+    .title {
+      @include title();
+      width: 700px;
+      p {
+        margin-top: 30px;
+        color: #757575;
+        width: auto;
+        span {
+          color: $bgcolor-black;
+          font-weight: 600;
+        }
+      }
+    }
+  }
+}
+/* founder section end */
+
+/* contact start */
+#contact {
+  height: 746px;
+  @include First-sections();
+  .container {
+    height: 545px;
+
+    .form-div {
+      width: 700px;
+      height: 357px;
+      margin: 0 auto;
+
+      button {
+        width: 200px;
+        height: 50px;
+        background-color: #333333;
+        color: #fff;
+        margin-top: 30px;
+        margin-left: 250px;
+        font-weight: 600;
+      }
+    }
+
+    form input {
+      display: block;
+      border: 1px solid #ddd;
+      width: 100%;
+      height: 45px;
+      padding: 5px 15px;
+      color: #333;
+      box-shadow: none;
+      margin: 5px 0;
+    }
+    form textarea {
+      border: 1px solid #ddd;
+      padding: 5px 15px;
+      width: 700px;
+    }
+
+    .title {
+      @include title();
+
+      p {
+        margin-top: 30px;
+        color: #757575;
+      }
+      h2 {
+        color: #757575;
+      }
+      h2:after {
+        @include after();
+        top: 33%;
+      }
+      span {
+        color: #333333;
+      }
+    }
+  }
+}
+/* contact end */
+
+/* footer */
+#adress {
+  background: $bgcolor-black;
+  text-align: center;
+  color: $white;
+  padding-top: 50px;
+  height: 331px;
+
+  .container {
+    div {
+      margin-bottom: 20px;
+    }
+    ul {
+      list-style: none;
+      text-align: center;
+
+      li {
+        display: inline-block;
+        float: none;
+        margin: 0px 30px;
+        margin-bottom: 35px;
+        margin-top: 20px;
+
+        a {
+          text-decoration: none;
+          color: $white;
+          background-color: $bgcolor-black;
+          font-size: 20px;
+        }
+      }
+    }
+  }
+}
