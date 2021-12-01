@@ -1,0 +1,285 @@
+* {
+  margin: 0;
+  padding: 0;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+}
+
+#intro {
+  background: -webkit-gradient(linear, left top, left bottom, from(rgba(0, 0, 0, 0.3)), color-stop(75%, rgba(0, 0, 0, 0.7)), to(#000)), url("http://lukoan.com/tf/tej/assets/images/intro.jpg");
+  background: linear-gradient(to bottom, rgba(0, 0, 0, 0.3) 0%, rgba(0, 0, 0, 0.7) 75%, #000 100%), url("http://lukoan.com/tf/tej/assets/images/intro.jpg");
+  height: 100vh;
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+}
+
+#about a, #my-portfolio button, #contact button:hover {
+  display: inline-block;
+  margin-top: 10px;
+  margin-right: 5px;
+  text-decoration: none;
+  background-color: #fff;
+  color: #333;
+  padding: 10px 25px;
+  border: 1px solid #333;
+  font-weight: 600;
+  letter-spacing: 0.5px;
+  -webkit-transition: 0.5s;
+  transition: 0.5s;
+  line-height: 1.42857143;
+  font-size: 13px;
+}
+
+#offer .fas, #counter .fas, #profile-icon i {
+  font-size: 50px;
+  margin: 30px auto;
+}
+
+.header {
+  position: fixed;
+  top: 0;
+  width: 100%;
+  background-color: black;
+}
+
+.header .navbar-brand {
+  font-size: 30px;
+}
+
+.header .container {
+  max-width: 100%;
+}
+
+.header .navbar-nav {
+  padding: 10px;
+}
+
+.header .navbar-nav .nav-link {
+  color: white;
+  margin-right: 15px;
+}
+
+#intro h1 {
+  color: white;
+}
+
+#about {
+  height: 550px;
+  margin-top: 40px;
+}
+
+#about .about-text {
+  margin-top: 20px;
+}
+
+#about h1 {
+  text-align: center;
+  margin-bottom: 40px;
+}
+
+#about img {
+  max-width: 100%;
+}
+
+#about a:hover {
+  background-color: black;
+  color: white;
+}
+
+#offer {
+  background-color: #ebebeb;
+}
+
+#offer .my-offer {
+  text-align: center;
+  padding: 80px;
+}
+
+#offer .my-offer h1 {
+  font-size: 30px;
+  letter-spacing: 1.5px;
+}
+
+#offer .col-lg-3 {
+  text-align: center;
+  margin-bottom: 65px;
+}
+
+#counter {
+  background-color: black;
+}
+
+#counter .row {
+  text-align: center;
+}
+
+#counter p {
+  color: white;
+  font-size: 20px;
+}
+
+#counter i {
+  color: white;
+}
+
+#counter .col-sm-3 {
+  margin: 40px 0;
+}
+
+#my-portfolio .row > * {
+  padding-right: 0;
+  padding-left: 0;
+}
+
+#my-portfolio .top {
+  text-align: center;
+}
+
+#my-portfolio .top h1 {
+  margin: 100px;
+}
+
+#my-portfolio .top ul {
+  margin-bottom: 50px;
+}
+
+#my-portfolio .top ul a {
+  text-decoration: none;
+  color: black;
+}
+
+#my-portfolio .top li {
+  list-style: none;
+  display: inline;
+  margin: 30px;
+}
+
+#my-portfolio .container {
+  max-width: 100%;
+}
+
+#my-portfolio img {
+  max-width: 100%;
+}
+
+#my-portfolio button {
+  margin-top: 50px;
+  margin-bottom: 50px;
+  margin-left: 45%;
+}
+
+#my-portfolio button:hover {
+  background-color: black;
+  color: white;
+}
+
+#profile-icon {
+  background-color: black;
+}
+
+#profile-icon .row {
+  text-align: center;
+  padding: 100px;
+}
+
+#profile-icon p,
+#profile-icon span,
+#profile-icon i {
+  color: white;
+}
+
+#contact {
+  background-color: #ebebeb;
+}
+
+#contact .col-sm-12 {
+  text-align: center;
+  margin: 70px 0;
+}
+
+#contact button {
+  display: block;
+  background-color: black;
+  margin-top: 10px;
+  margin-right: 5px;
+  text-decoration: none;
+  padding: 10px 25px;
+  border: 1px solid #fff;
+  font-weight: 600;
+  letter-spacing: 0.5px;
+  -webkit-transition: 0.5s;
+  transition: 0.5s;
+  line-height: 1.42857143;
+  font-size: 13px;
+  color: #fff;
+}
+
+#contact form {
+  margin-left: 50px;
+  padding: 30px;
+  background-color: black;
+}
+
+#contact form input {
+  margin-bottom: 15px;
+  border: none;
+  background-color: black;
+  border-bottom: 1px solid #262626;
+}
+
+#contact form textarea {
+  background-color: black;
+  border: none;
+  width: 100%;
+  border-bottom: 1px solid #262626;
+}
+
+#contact .right-side {
+  margin-bottom: 20px;
+  display: inline-block;
+  width: 50px;
+  text-align: center;
+  width: 50px;
+  height: 50px;
+  background-color: black;
+}
+
+#contact .right-side i {
+  color: white;
+  margin-top: 15px;
+}
+
+#end {
+  padding: 50px;
+  background-color: black;
+}
+
+#end .row {
+  text-align: center;
+}
+
+#end p {
+  color: white;
+}
+
+#end .center {
+  margin-left: 100px;
+}
+
+#end .left-side {
+  margin-left: -100px;
+}
+
+#end .col-sm-4 ul {
+  margin-left: 200px;
+}
+
+#end .col-sm-4 li {
+  display: inline-block;
+  list-style: none;
+  margin-right: 5px;
+  margin-top: 25px;
+}
+/*# sourceMappingURL=style.css.map */
